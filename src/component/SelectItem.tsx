@@ -32,7 +32,7 @@ const SelectItem = ({ item }: any) => {
               <Typography
                 sx={{
                   fontWeight: "bold",
-                  fontSize: { xs: "0.7rem", md: "1rem" },
+                  fontSize: { xs: "0.5rem", md: "1rem" },
                 }}
               >
                 {v}

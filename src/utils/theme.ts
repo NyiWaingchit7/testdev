@@ -8,7 +8,7 @@ export const theme = createTheme({
       main: "#F86F03",
     },
     info: {
-      main: "#F8FAE5",
+      main: "#F5F5F5",
     },
     success: {
       main: "#FFA41B",

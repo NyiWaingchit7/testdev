@@ -62,7 +62,7 @@ const FirstSection = () => {
           }}
         >
           {selectItem.map((s) => (
-            <Box key={s.id} sx={{ width: { xs: "26%", sm: "25%" } }}>
+            <Box key={s.id} sx={{ width: "26%" }}>
               <SelectItem item={s} />
             </Box>
           ))}
