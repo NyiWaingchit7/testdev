@@ -1,7 +1,7 @@
 import { Box, Button, Drawer, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
-
+import CloseIcon from "@mui/icons-material/Close";
 const TopBar = () => {
   const [open, setOpen] = useState(false);
   return (
@@ -102,13 +102,27 @@ const TopBar = () => {
         </Box>
         <Box>
           <Drawer anchor={"right"} open={open} onClose={() => setOpen(false)}>
+            <Button
+              sx={{
+                mt: 3,
+                px: 1,
+
+                fontSize: "0.7rem",
+                width: "10%",
+                mx: 1,
+              }}
+              onClick={() => setOpen(false)}
+              size="small"
+            >
+              <CloseIcon sx={{ fontSize: "1.5rem" }} />
+            </Button>
             <Box
               sx={{
                 display: "flex",
                 justifyContent: "center",
 
                 flexDirection: "column",
-                mt: 5,
+                mt: 2,
                 mx: 3,
               }}
             >
@@ -131,7 +145,7 @@ const TopBar = () => {
               ))}{" "}
               <Button
                 sx={{
-                  px: { sx: 1, md: 4 },
+                  px: 1,
                   color: "info.light",
                   fontSize: "0.7rem",
                   mx: "auto",

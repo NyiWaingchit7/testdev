@@ -7,7 +7,7 @@ import { qLinks } from "../utils/data2";
 
 const Footer = () => {
   return (
-    <Box sx={{ maxWidth: "1300px", mx: "auto", mt: 5, mb: 5 }}>
+    <Box sx={{ maxWidth: "1300px", mx: "auto", mt: 5 }}>
       <Box
         sx={{
           maxWidth: "800px",
@@ -167,7 +167,7 @@ const Footer = () => {
           </Box>
         </Box>
       </Box>
-      <Box sx={{ mt: 8 }}>
+      <Box sx={{ mt: 6 }}>
         <Box
           sx={{
             maxWidth: "1300px",
@@ -179,7 +179,7 @@ const Footer = () => {
         ></Box>
         <Typography
           sx={{
-            mt: 3,
+            mt: 2,
             maxWidth: { xs: "250px", sm: "400px" },
             mx: "auto",
             fontSize: { xs: "0.6rem", sm: "1rem" },
