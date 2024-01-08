@@ -43,7 +43,7 @@ const FifthSection = () => {
           p: "0 4px",
           maxWidth: "900px",
           mx: "auto",
-          maxHeight: { xs: "310px", md: "610px" },
+          maxHeight: { xs: "320px", md: "610px" },
           flexDirection: "column",
           mt: 3,
         }}
