@@ -7,6 +7,7 @@ import FirstSection from "./component/FirstSection";
 import SecondSection from "./component/SecondSection";
 import ThirdSection from "./component/ThirdSection";
 import FourthSection from "./component/ForuthSection";
+import FifthSection from "./component/FifthSectiont";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <SecondSection />
       <ThirdSection />
       <FourthSection />
+      <FifthSection />
     </Box>
   );
 }

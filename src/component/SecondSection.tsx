@@ -13,7 +13,7 @@ const SecondSection = () => {
       .map((d) => <Card key={d.id} card={d as placeType} />);
   };
   return (
-    <Box sx={{ maxWidth: "1200px", mx: "auto", mt: 5 }}>
+    <Box sx={{ maxWidth: "1300px", mx: "auto", mt: 5 }}>
       <Box
         sx={{
           display: "flex",
@@ -90,6 +90,7 @@ const SecondSection = () => {
           flexWrap: "wrap",
           justifyContent: "center",
           mt: 3,
+          mx: "auto",
         }}
       >
         {renderItem()}
