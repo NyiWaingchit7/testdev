@@ -1,5 +1,4 @@
 import { Box, Button, Typography } from "@mui/material";
-import { useState } from "react";
 import SelectItem from "./SelectItem";
 import SearchIcon from "@mui/icons-material/Search";
 

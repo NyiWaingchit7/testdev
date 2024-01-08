@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import TravelExploreIcon from "@mui/icons-material/TravelExplore";
+import { agencies, imgGrid } from "../utils/data2";
 
 const FifthSection = () => {
   return (
@@ -21,6 +22,7 @@ const FifthSection = () => {
               fontSize: { xs: "0.6rem", md: "0.8rem" },
               fontWeight: "bold",
               display: "inline",
+              mx: 1,
             }}
           >
             Share your happy moment
@@ -48,7 +50,7 @@ const FifthSection = () => {
           mt: 3,
         }}
       >
-        {data.map((d) => {
+        {imgGrid.map((d) => {
           return (
             <Box sx={{ width: "32%" }} key={d.id}>
               <Box
@@ -92,7 +94,9 @@ const FifthSection = () => {
                   color: "info.dark",
                 }}
               >
-                {d.icon}
+                <TravelExploreIcon
+                  sx={{ fontSize: { xs: "0.6rem", sm: "1.7rem" } }}
+                />
               </Typography>
               <Typography
                 sx={{
@@ -111,81 +115,3 @@ const FifthSection = () => {
   );
 };
 export default FifthSection;
-export const data = [
-  {
-    id: 1,
-    img: "g1.jpg",
-    mdHeight: "300px", //I know it shouldn't be but I try the best to be same as sample
-    xsHeight: "200px",
-  },
-  {
-    id: 2,
-    img: "g2.jpg",
-    mdHeight: "150px",
-    xsHeight: "100px",
-  },
-  {
-    id: 3,
-    img: "g3.jpg",
-    mdHeight: "150px",
-    xsHeight: "100px",
-  },
-  {
-    id: 4,
-
-    mdHeight: "300px",
-    xsHeight: "200px",
-    img: "g4.jpg",
-  },
-  {
-    id: 5,
-
-    mdHeight: "300px",
-    xsHeight: "200px",
-    img: "g5.jpg",
-  },
-  {
-    id: 6,
-
-    mdHeight: "150px",
-    xsHeight: "100px",
-    img: "g6.jpg",
-  },
-];
-export const agencies = [
-  {
-    id: 1,
-    name: "Ikema",
-    icon: (
-      <TravelExploreIcon sx={{ fontSize: { xs: "0.6rem", sm: "1.7rem" } }} />
-    ),
-  },
-  {
-    id: 2,
-    name: "Niana",
-    icon: (
-      <TravelExploreIcon sx={{ fontSize: { xs: "0.6rem", sm: "1.7rem" } }} />
-    ),
-  },
-  {
-    id: 3,
-    name: "Ruan",
-    icon: (
-      <TravelExploreIcon sx={{ fontSize: { xs: "0.6rem", sm: "1.7rem" } }} />
-    ),
-  },
-  {
-    id: 4,
-    name: "Gurrero",
-    icon: (
-      <TravelExploreIcon sx={{ fontSize: { xs: "0.6rem", sm: "1.7rem" } }} />
-    ),
-  },
-  {
-    id: 5,
-    name: "Jose",
-    icon: (
-      <TravelExploreIcon sx={{ fontSize: { xs: "0.6rem", sm: "1.7rem" } }} />
-    ),
-  },
-];

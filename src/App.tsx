@@ -6,8 +6,9 @@ import TopBar from "./component/TopBar";
 import FirstSection from "./component/FirstSection";
 import SecondSection from "./component/SecondSection";
 import ThirdSection from "./component/ThirdSection";
-import FourthSection from "./component/ForuthSection";
+import FourthSection from "./component/FourthSection";
 import FifthSection from "./component/FifthSectiont";
+import Footer from "./component/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <ThirdSection />
       <FourthSection />
       <FifthSection />
+      <Footer />
     </Box>
   );
 }

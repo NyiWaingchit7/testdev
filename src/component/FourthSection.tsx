@@ -51,6 +51,7 @@ const FourthSection = () => {
             sx={{
               ".Mui-selected": {
                 fontWeight: "bold",
+                color: "success.main",
               },
               bgcolor: "info.main",
               borderRadius: 2,

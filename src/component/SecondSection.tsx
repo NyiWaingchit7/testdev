@@ -52,9 +52,11 @@ const SecondSection = () => {
             sx={{
               ".Mui-selected": {
                 fontWeight: "bold",
+                color: "success.main",
               },
               bgcolor: "info.main",
               borderRadius: 2,
+              boxShadow: 1,
             }}
           >
             {placesCategory.map((p) => {

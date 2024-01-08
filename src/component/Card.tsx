@@ -10,15 +10,16 @@ const Card = ({ card }: prop) => {
   return (
     <Box
       sx={{
-        width: { xs: "90%", sm: "28%", lg: "28%" },
+        width: { xs: "23%", sm: "28%" },
 
         m: 1,
         borderRadius: 3,
         bgcolor: "info.main",
         p: 1,
+        boxShadow: 1,
       }}
     >
-      <Box sx={{ width: "100%", mb: 2, height: { xs: "150px", md: "200px" } }}>
+      <Box sx={{ width: "100%", mb: 2, height: { xs: "90px", md: "200px" } }}>
         <Box
           component="img"
           src={card.img}
@@ -35,21 +36,31 @@ const Card = ({ card }: prop) => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          mx: 1,
         }}
       >
-        <Typography sx={{ fontWeight: "bold" }}>{card.name}</Typography>
+        <Typography
+          sx={{ fontWeight: "bold", fontSize: { xs: "0.6rem", sm: "1rem" } }}
+        >
+          {card.name}
+        </Typography>
         <Box
           sx={{ display: "flex", alignItems: "center", color: "success.main" }}
         >
-          <StarIcon />
-          <Typography>{card.rating}</Typography>
+          <StarIcon sx={{ fontSize: { xs: "0.6rem", sm: "1rem" } }} />
+          <Typography sx={{ fontSize: { xs: "0.5rem", sm: "1rem" } }}>
+            {card.rating}
+          </Typography>
         </Box>
       </Box>
       <Box sx={{ color: "primary.main" }}>
         {" "}
-        <Typography sx={{ fontSize: "0.7rem", mx: 1 }}>
-          <LocationOnIcon sx={{ fontSize: "0.9rem", alignSelf: "center" }} />{" "}
+        <Typography sx={{ fontSize: { xs: "0.5rem", sm: "0.8rem" } }}>
+          <LocationOnIcon
+            sx={{
+              fontSize: { xs: "0.6rem", sm: "1rem" },
+              alignSelf: "center",
+            }}
+          />{" "}
           {card.location}
         </Typography>
       </Box>
